@@ -1,0 +1,12 @@
+http://localhost:8888/swagger-ui.html
+
+Endpoints principaux :
+    GET /api/blockchain : Afficher tous les blocs
+    POST /api/blockchain : Ajouter un nouveau bloc
+    GET /api/blockchain/validate : Vérifier l'intégrité
+    GET /api/blockchain/qr/{blockId} : Générer un QR code
+    POSt /api/blockchain/mine/{blockId} : Miner un bloc existant
+
+    # Exemple de requête pour miner un bloc existant
+    curl -X POST http://localhost:8888/api/blockchain/mine/1
+
